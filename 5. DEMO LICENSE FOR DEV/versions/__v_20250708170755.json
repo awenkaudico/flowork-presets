@@ -1,0 +1,32 @@
+{
+    "nodes": [
+        {
+            "id": "9cd3f9e2-15b1-4512-8999-919f69bf354e",
+            "name": "Tampilkan Variabel (DEMO)",
+            "x": 761.0,
+            "y": 376.0,
+            "description": "",
+            "module_id": "tampilkan_variabel_demo",
+            "config_values": {
+                "variabel_target": "COBA"
+            }
+        },
+        {
+            "id": "44060843-5df0-4db8-8e97-3d71e9493e98",
+            "name": "Tampilkan Output (Popup)",
+            "x": 1020.0,
+            "y": 370.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        }
+    ],
+    "connections": [
+        {
+            "id": "0162b5de-4bda-4d31-b7c4-71c167c78a33",
+            "from": "9cd3f9e2-15b1-4512-8999-919f69bf354e",
+            "to": "44060843-5df0-4db8-8e97-3d71e9493e98",
+            "source_port_name": null
+        }
+    ]
+}

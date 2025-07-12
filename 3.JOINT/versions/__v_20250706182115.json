@@ -1,0 +1,128 @@
+{
+    "nodes": [
+        {
+            "id": "4a3bb3bb-0306-4bb9-b30a-0e2e228a0fe4",
+            "name": "Tampilkan Output (Popup)",
+            "x": 1092.0,
+            "y": 249.0,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "8f8daa49-289e-4fe0-8aad-c0e60efdffbf",
+            "name": "loc.join_module_name",
+            "x": 690.0,
+            "y": 255.0,
+            "description": "",
+            "module_id": "join_module",
+            "config_values": {
+                "expected_inputs_count": 3
+            }
+        },
+        {
+            "id": "6dfd8936-4aa0-4379-b60f-dedf99ca3c25",
+            "name": "START",
+            "x": 249.0,
+            "y": 157.0,
+            "description": "",
+            "module_id": "set_variable_module",
+            "config_values": {}
+        },
+        {
+            "id": "38d5cf71-46b7-4b13-b745-e2fa8aaa9556",
+            "name": "START",
+            "x": 253.0,
+            "y": 260.0,
+            "description": "",
+            "module_id": "set_variable_module",
+            "config_values": {}
+        },
+        {
+            "id": "d0f49681-37ab-4489-a112-7fb4be25068a",
+            "name": "START",
+            "x": 254.0,
+            "y": 362.0,
+            "description": "",
+            "module_id": "set_variable_module",
+            "config_values": {}
+        },
+        {
+            "id": "663899c8-6dcc-45e1-a77d-93bf234587bf",
+            "name": "Jeda (Sleep)",
+            "x": 499.0,
+            "y": 145.0,
+            "description": "",
+            "module_id": "sleep_module",
+            "config_values": {
+                "duration_seconds": 1
+            }
+        },
+        {
+            "id": "d2a3ccca-d84a-4a46-9aac-6b0c4f2b9a4f",
+            "name": "Jeda (Sleep)",
+            "x": 502.0,
+            "y": 255.0,
+            "description": "",
+            "module_id": "sleep_module",
+            "config_values": {
+                "duration_seconds": 2
+            }
+        },
+        {
+            "id": "7d876cba-847b-4dae-9c0a-c739ef30197c",
+            "name": "Jeda (Sleep)",
+            "x": 507.0,
+            "y": 374.0,
+            "description": "",
+            "module_id": "sleep_module",
+            "config_values": {
+                "duration_seconds": 3
+            }
+        }
+    ],
+    "connections": [
+        {
+            "id": "0c0171c3-d162-4351-83ca-b230c73ed6e6",
+            "from": "8f8daa49-289e-4fe0-8aad-c0e60efdffbf",
+            "to": "4a3bb3bb-0306-4bb9-b30a-0e2e228a0fe4",
+            "source_port_name": "output"
+        },
+        {
+            "id": "6ebe7e3d-08dd-4f7f-b427-842c05abf3ac",
+            "from": "6dfd8936-4aa0-4379-b60f-dedf99ca3c25",
+            "to": "663899c8-6dcc-45e1-a77d-93bf234587bf",
+            "source_port_name": null
+        },
+        {
+            "id": "7712f638-7a2b-4a2a-b543-a35117adfbbb",
+            "from": "38d5cf71-46b7-4b13-b745-e2fa8aaa9556",
+            "to": "d2a3ccca-d84a-4a46-9aac-6b0c4f2b9a4f",
+            "source_port_name": null
+        },
+        {
+            "id": "c20ed291-1ce2-40d0-9bbe-cfc75d6cb2aa",
+            "from": "d0f49681-37ab-4489-a112-7fb4be25068a",
+            "to": "7d876cba-847b-4dae-9c0a-c739ef30197c",
+            "source_port_name": null
+        },
+        {
+            "id": "afd5cf32-f78c-429b-8b97-78a8aa751582",
+            "from": "663899c8-6dcc-45e1-a77d-93bf234587bf",
+            "to": "8f8daa49-289e-4fe0-8aad-c0e60efdffbf",
+            "source_port_name": null
+        },
+        {
+            "id": "4e69a216-2238-4b81-bd92-48944507f724",
+            "from": "d2a3ccca-d84a-4a46-9aac-6b0c4f2b9a4f",
+            "to": "8f8daa49-289e-4fe0-8aad-c0e60efdffbf",
+            "source_port_name": null
+        },
+        {
+            "id": "03e0e0e1-5ce9-4b8a-bc40-83044906a838",
+            "from": "7d876cba-847b-4dae-9c0a-c739ef30197c",
+            "to": "8f8daa49-289e-4fe0-8aad-c0e60efdffbf",
+            "source_port_name": null
+        }
+    ]
+}
