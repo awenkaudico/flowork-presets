@@ -1,0 +1,14 @@
+{
+    "nodes": [
+        {
+            "id": "87bee902-27ad-47d5-b02e-a3361f45632b",
+            "name": "Penerima Data (Receiver)",
+            "x": 266.0,
+            "y": 179.0,
+            "description": "",
+            "module_id": "receiver_module",
+            "config_values": {}
+        }
+    ],
+    "connections": []
+}
