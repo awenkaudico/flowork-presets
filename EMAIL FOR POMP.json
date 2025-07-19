@@ -1,0 +1,72 @@
+{
+    "nodes": [
+        {
+            "id": "568eec30-0084-43da-99b2-e3d0c935bf5c",
+            "name": "Generator Artikel Gemini",
+            "x": 470.0,
+            "y": 141.0,
+            "width": 266,
+            "height": 256,
+            "description": "",
+            "module_id": "gemini_artikel_plugin",
+            "config_values": {
+                "api_key_var": "GEMINI_API_KEY",
+                "model_name": "gemini-1.5-flash-latest",
+                "prompt_key": "body_plain",
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        },
+        {
+            "id": "2b7e7e9f-9340-4fef-b562-36dbc6d3ce31",
+            "name": "Simpan Artikel ke TXT",
+            "x": 883.0,
+            "y": 305.0,
+            "width": 266,
+            "height": 256,
+            "description": "",
+            "module_id": "simpan_artikel_module",
+            "config_values": {
+                "content_key": "generated_article",
+                "output_folder": "C:/Users/User/Desktop",
+                "filename_mode": "dynamic",
+                "manual_filename": "artikel_hasil_gemini",
+                "dynamic_filename_key": "result",
+                "overwrite": true,
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        },
+        {
+            "id": "c862865a-eeb3-490f-95e5-aad672183b9e",
+            "name": "Tampilkan Output (Popup)",
+            "x": 885.0,
+            "y": 13.0,
+            "width": 266,
+            "height": 256,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        }
+    ],
+    "connections": [
+        {
+            "id": "3d62bb62-ca77-4599-a3ee-636285eb5784",
+            "from": "568eec30-0084-43da-99b2-e3d0c935bf5c",
+            "to": "2b7e7e9f-9340-4fef-b562-36dbc6d3ce31",
+            "source_port_name": null
+        },
+        {
+            "id": "c2200744-2622-4780-8e79-28ac7b46b388",
+            "from": "568eec30-0084-43da-99b2-e3d0c935bf5c",
+            "to": "c862865a-eeb3-490f-95e5-aad672183b9e",
+            "source_port_name": null
+        }
+    ]
+}

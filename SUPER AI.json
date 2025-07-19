@@ -1,0 +1,150 @@
+{
+    "nodes": [
+        {
+            "id": "b2734ec8-1bc5-4fb1-ab51-8068ff6306b9",
+            "name": "AI Center (Router Cerdas)",
+            "x": 773.0,
+            "y": 197.0,
+            "width": 338,
+            "height": 268,
+            "description": "",
+            "module_id": "ai_center_module",
+            "config_values": {
+                "provider_mapping": {
+                    "TEXT_GENERATION": "gemini_provider",
+                    "IMAGE_GENERATION": "dummy_provider",
+                    "AUDIO_GENERATION": "dummy_provider",
+                    "VIDEO_GENERATION": "dummy_provider",
+                    "CODE_GENERATION": "dummy_provider",
+                    "DATA_ANALYSIS": "dummy_provider"
+                },
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        },
+        {
+            "id": "3714eedf-7042-4602-9054-f3d135bbd752",
+            "name": "Tampilkan Output (Popup)",
+            "x": 1460.0,
+            "y": 111.0,
+            "width": 106,
+            "height": 80,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "e03d308c-1f7c-4db5-8671-4c43521255d1",
+            "name": "Tampilkan Output (Popup)",
+            "x": 1459.0,
+            "y": 5.0,
+            "width": 107,
+            "height": 95,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "8ad24cba-724d-4308-adbe-8065600462ed",
+            "name": "Tampilkan Output (Popup)",
+            "x": 1461.0,
+            "y": 598.0,
+            "width": 101,
+            "height": 80,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "e25dadfb-d4d3-4723-9609-5e52ee0b3b8a",
+            "name": "Tampilkan Output (Popup)",
+            "x": 1460.0,
+            "y": 509.0,
+            "width": 101,
+            "height": 82,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "4ad82274-4ee8-4654-b268-f69b4a75c471",
+            "name": "Tampilkan Output (Popup)",
+            "x": 1461.0,
+            "y": 207.0,
+            "width": 101,
+            "height": 80,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "6dde5086-53ab-4ea2-9b3c-92cc5f4235c2",
+            "name": "Tampilkan Output (Popup)",
+            "x": 1459.0,
+            "y": 396.0,
+            "width": 99,
+            "height": 97,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "07375b6e-ba44-4ad8-8633-4422f2d27292",
+            "name": "Tampilkan Output (Popup)",
+            "x": 1460.0,
+            "y": 299.0,
+            "width": 98,
+            "height": 86,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        }
+    ],
+    "connections": [
+        {
+            "id": "6a3da067-92b7-4cd9-be69-16ce8ab9754d",
+            "from": "b2734ec8-1bc5-4fb1-ab51-8068ff6306b9",
+            "to": "e03d308c-1f7c-4db5-8671-4c43521255d1",
+            "source_port_name": "text_output"
+        },
+        {
+            "id": "152eb3d6-0c7d-4002-a303-ab79cde667cf",
+            "from": "b2734ec8-1bc5-4fb1-ab51-8068ff6306b9",
+            "to": "3714eedf-7042-4602-9054-f3d135bbd752",
+            "source_port_name": "image_output"
+        },
+        {
+            "id": "0d99c612-001f-4b92-b2d9-7ba52a0c05e4",
+            "from": "b2734ec8-1bc5-4fb1-ab51-8068ff6306b9",
+            "to": "8ad24cba-724d-4308-adbe-8065600462ed",
+            "source_port_name": "default_output"
+        },
+        {
+            "id": "00d77635-4d3f-42c8-9215-6346f148c2bc",
+            "from": "b2734ec8-1bc5-4fb1-ab51-8068ff6306b9",
+            "to": "e25dadfb-d4d3-4723-9609-5e52ee0b3b8a",
+            "source_port_name": "data_output"
+        },
+        {
+            "id": "3d65d8fd-3a78-4584-8609-9d103f37e79a",
+            "from": "b2734ec8-1bc5-4fb1-ab51-8068ff6306b9",
+            "to": "6dde5086-53ab-4ea2-9b3c-92cc5f4235c2",
+            "source_port_name": "code_output"
+        },
+        {
+            "id": "aafb4dd5-41bc-484e-bfd6-0f9bb71005ca",
+            "from": "b2734ec8-1bc5-4fb1-ab51-8068ff6306b9",
+            "to": "07375b6e-ba44-4ad8-8633-4422f2d27292",
+            "source_port_name": "video_output"
+        },
+        {
+            "id": "2f71a720-5858-41cf-b9c6-b9a2d62fb53f",
+            "from": "b2734ec8-1bc5-4fb1-ab51-8068ff6306b9",
+            "to": "4ad82274-4ee8-4654-b268-f69b4a75c471",
+            "source_port_name": "audio_output"
+        }
+    ]
+}

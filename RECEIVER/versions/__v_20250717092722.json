@@ -1,0 +1,34 @@
+{
+    "nodes": [
+        {
+            "id": "43c40d02-8d5c-485d-9449-0206cfb58f85",
+            "name": "Tampilkan Output (Popup)",
+            "x": 687.0,
+            "y": 65.0,
+            "width": 115,
+            "height": 80,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "7e537b3f-595f-462c-8160-e4e95d1045b6",
+            "name": "Penerima Data (Receiver)",
+            "x": 244.0,
+            "y": 141.0,
+            "width": 266,
+            "height": 256,
+            "description": "",
+            "module_id": "receiver_module",
+            "config_values": {}
+        }
+    ],
+    "connections": [
+        {
+            "id": "24b99642-6f96-49cb-b661-5a5034d05ecf",
+            "from": "7e537b3f-595f-462c-8160-e4e95d1045b6",
+            "to": "43c40d02-8d5c-485d-9449-0206cfb58f85",
+            "source_port_name": null
+        }
+    ]
+}

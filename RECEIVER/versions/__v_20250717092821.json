@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "id": "7e537b3f-595f-462c-8160-e4e95d1045b6",
+            "name": "Penerima Data (Receiver)",
+            "x": 244.0,
+            "y": 141.0,
+            "width": 151,
+            "height": 99,
+            "description": "",
+            "module_id": "receiver_module",
+            "config_values": {}
+        },
+        {
+            "id": "910416de-a712-4514-b1b5-4e3dae723fc4",
+            "name": "Generator Artikel AI",
+            "x": 545.0,
+            "y": 74.0,
+            "width": 80,
+            "height": 80,
+            "description": "",
+            "module_id": "gemini_artikel_plugin",
+            "config_values": {}
+        },
+        {
+            "id": "9fb6c0ac-4fd3-4740-bdb6-9c2126043520",
+            "name": "Tampilkan Output (Popup)",
+            "x": 736.0,
+            "y": 76.0,
+            "width": 155,
+            "height": 122,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        }
+    ],
+    "connections": [
+        {
+            "id": "71d43c47-2d14-4e28-b901-f3d55b723242",
+            "from": "7e537b3f-595f-462c-8160-e4e95d1045b6",
+            "to": "910416de-a712-4514-b1b5-4e3dae723fc4",
+            "source_port_name": null
+        },
+        {
+            "id": "7494891a-978c-4c98-a00d-f486952554c3",
+            "from": "910416de-a712-4514-b1b5-4e3dae723fc4",
+            "to": "9fb6c0ac-4fd3-4740-bdb6-9c2126043520",
+            "source_port_name": null
+        }
+    ]
+}

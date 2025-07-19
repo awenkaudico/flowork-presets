@@ -1,0 +1,16 @@
+{
+    "nodes": [
+        {
+            "id": "44364c00-3ee0-4b0c-bc67-61259b1d22e5",
+            "name": "Tampilkan Output (Popup)",
+            "x": 611.0,
+            "y": 214.0,
+            "width": 266,
+            "height": 256,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        }
+    ],
+    "connections": []
+}

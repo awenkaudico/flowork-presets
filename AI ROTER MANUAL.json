@@ -1,0 +1,143 @@
+{
+    "nodes": [
+        {
+            "id": "e382d71d-ab5b-46d8-81c8-9c606a6a1deb",
+            "name": "AI Router (Manual Mode)",
+            "x": 448.0,
+            "y": 254.0,
+            "width": 266,
+            "height": 256,
+            "description": "",
+            "module_id": "rule_router_module",
+            "config_values": {
+                "routing_rules": [
+                    {
+                        "port_name": "musik",
+                        "keywords": "musik,sound,suara"
+                    },
+                    {
+                        "port_name": "gambar",
+                        "keywords": "gambar,karikatur"
+                    },
+                    {
+                        "port_name": "video",
+                        "keywords": "video"
+                    },
+                    {
+                        "port_name": "artikel",
+                        "keywords": "artikel,berita"
+                    }
+                ],
+                "has_breakpoint": false,
+                "timeout_seconds": 0,
+                "retry_attempts": 0,
+                "retry_delay_seconds": 5,
+                "is_checkpoint": false
+            }
+        },
+        {
+            "id": "b6cc48d1-0243-45b9-be8f-ac460a11984e",
+            "name": "Penerima Data (Receiver)",
+            "x": 122.0,
+            "y": 222.0,
+            "width": 266,
+            "height": 256,
+            "description": "",
+            "module_id": "receiver_module",
+            "config_values": {}
+        },
+        {
+            "id": "d0f19b88-14c3-4de7-bab8-4c5ffd330b64",
+            "name": "Tampilkan Output (Popup)",
+            "x": 837.0,
+            "y": 47.0,
+            "width": 179,
+            "height": 107,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "460db0f1-0db4-4b8e-be28-2dc74bd1d6b2",
+            "name": "Tampilkan Output (Popup) (Copy)",
+            "x": 860.0,
+            "y": 179.0,
+            "width": 180,
+            "height": 107,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "97b2bb04-51bf-4236-a06e-bb66e0b9d779",
+            "name": "Tampilkan Output (Popup) (Copy)",
+            "x": 910.0,
+            "y": 306.0,
+            "width": 180,
+            "height": 107,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "486e39ef-3b29-4188-a126-56147d7a69ba",
+            "name": "Tampilkan Output (Popup) (Copy)",
+            "x": 875.0,
+            "y": 439.0,
+            "width": 180,
+            "height": 107,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        },
+        {
+            "id": "6c5369ff-20b8-4ba6-84a1-cc7c984aaa1c",
+            "name": "Tampilkan Output (Popup) (Copy)",
+            "x": 793.0,
+            "y": 561.0,
+            "width": 180,
+            "height": 107,
+            "description": "",
+            "module_id": "debug_popup_module",
+            "config_values": {}
+        }
+    ],
+    "connections": [
+        {
+            "id": "42cebf4b-8c7f-460d-a1f3-a723f7ed5602",
+            "from": "b6cc48d1-0243-45b9-be8f-ac460a11984e",
+            "to": "e382d71d-ab5b-46d8-81c8-9c606a6a1deb",
+            "source_port_name": null
+        },
+        {
+            "id": "2826b825-e47c-43b7-b14f-7f028980954e",
+            "from": "e382d71d-ab5b-46d8-81c8-9c606a6a1deb",
+            "to": "d0f19b88-14c3-4de7-bab8-4c5ffd330b64",
+            "source_port_name": "musik"
+        },
+        {
+            "id": "fdabbc90-5205-4c0a-9709-53259d7344f0",
+            "from": "e382d71d-ab5b-46d8-81c8-9c606a6a1deb",
+            "to": "460db0f1-0db4-4b8e-be28-2dc74bd1d6b2",
+            "source_port_name": "gambar"
+        },
+        {
+            "id": "6712ee74-7164-4376-88cc-ce95041ad923",
+            "from": "e382d71d-ab5b-46d8-81c8-9c606a6a1deb",
+            "to": "97b2bb04-51bf-4236-a06e-bb66e0b9d779",
+            "source_port_name": "video"
+        },
+        {
+            "id": "1ca34bcb-3e9d-4c7f-b264-4f5f84e34b9c",
+            "from": "e382d71d-ab5b-46d8-81c8-9c606a6a1deb",
+            "to": "486e39ef-3b29-4188-a126-56147d7a69ba",
+            "source_port_name": "artikel"
+        },
+        {
+            "id": "ebf91038-f233-4abc-b0a5-7fd3f48cd22f",
+            "from": "e382d71d-ab5b-46d8-81c8-9c606a6a1deb",
+            "to": "6c5369ff-20b8-4ba6-84a1-cc7c984aaa1c",
+            "source_port_name": "default"
+        }
+    ]
+}
